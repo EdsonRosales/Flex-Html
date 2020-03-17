@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		.contenedor{
+    		max-width: 100%;
+    		margin: 1rem auto;
+    		display: flex;
+    		flex-wrap: wrap;
+    		text-align: left;
+		}
+
+		header{
+			width: 100%;
+			background: black;
+			border-bottom-right-radius: 100px;
+			text-align: center;
+		}
+
+		header h1{
+			color: white;
+		}
+
+		main{
+			flex-direction: row;
+			width: 100%;
+			flex-shrink: 0;
+			display: flex;
+		}
+
+		.aside-contenedor1,.aside2-contenedor1{
+			background: #749527;
+			order: 1;
+			flex:1 1 0px;
+			height: 250px;
+			border-radius: 10px;
+			margin:5px 5px 5px 5px;
+		}
+
+		.aside2-contenedor1{
+			
+			order: 3;
+			
+		}
+
+		.md{
+			order: 2;
+			flex:3 1 0px;
+			
+		}
+
+		footer{
+			order: 4;
+		    flex: 1 1 100%;
+		    text-align: left;
+		    background: black;
+		    color: white;
+		    border-top-left-radius: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<h1>Encabezado</h1>
+		</header>
+
+		<main>
+			<aside class="aside-contenedor1">
+				<ul>
+					<li>
+						<a style="font-size: 12px;" href="#">Inicio</a>
+					</li>
+					<li>
+						<a style="font-size: 12px;" href="#">Opcion 1</a>
+					</li>
+				</ul>
+			</aside>
+			
+			<section class="md">
+				<h1>Apples</h1>
+				<p>
+					The apple is the pomaceus fruit of the apple tree.
+				</p>
+				<center><img src="1.png" alt="" style="width: 50%; "></center>
+				<diV>
+					<h1>Artiuclo 2. Granny Smith</h1>
+					<span>These Juicy apples make a grea filling for apple pies.</span>
+					<br>...
+					<br>...
+
+				</diV>
+			</section>
+			
+			<aside class="aside2-contenedor1">
+				<h3>Este es el Aside</h3>
+			</aside>
+		</main>
+
+		<footer>
+			<h5 style="margin-left: 45px;">Creado por: Luis Hernandez</h5>
+			<p style="margin-left: 45px;">Contacto 314-444-5555</p>
+		</footer>
+	</div>
+</body>
+</html>
